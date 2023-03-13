@@ -5,6 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>React Shop</title>
+        {/*
+          - aqui van los script de Google Analytics 
+          - consultar recomendaciones de NextJs
+        */}
       </Head>
       <body>
         <Main />
