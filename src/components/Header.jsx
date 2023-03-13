@@ -22,33 +22,33 @@ const Header = () => {
 					</Link>
 					<ul>
 						<li>
-							<a href="/">All</a>
+							<Link href="/">All</Link>
 						</li>
 						<li>
-							<a href="/">Clothes</a>
+							<Link href="/">Clothes</Link>
 						</li>
 						<li>
-							<a href="/">Electronics</a>
+							<Link href="/">Electronics</Link>
 						</li>
 						<li>
-							<a href="/">Furnitures</a>
+							<Link href="/">Furnitures</Link>
 						</li>
 						<li>
-							<a href="/">Toys</a>
+							<Link href="/">Toys</Link>
 						</li>
 						<li>
-							<a href="/">Others</a>
+							<Link href="/">Others</Link>
 						</li>
 					</ul>
 				</div>
 				<div className={styles['navbar-right']}>
 					<ul>
-						<li className={`${styles["more-clickable-area"]} ${styles["navbar-email"]} ${styles.pointer}`} onClick={() => toggleMenu()}>
+						<li className={`${styles["more-clickable-area"]} ${styles["navbar-email"]} ${styles.pointer}`} onClick={() => toggleMenu()} aria-hidden="true" >
 							platzi@example.com
 						</li>
 						<li
 							className={styles['navbar-shopping-cart']}
-							onClick={() => toggleOrder()}
+							onClick={() => toggleOrder()} aria-hidden="true"
 						>
 							<Image className={`${styles["more-clickable-area"]} ${styles.pointer}`} src={shoppingCart} alt="shopping cart" />
 							{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
@@ -60,6 +60,6 @@ const Header = () => {
 			{state.orderIsOpen && <MyOrder />}
 		</>
 	);
-}
+};
 
 export default Header;

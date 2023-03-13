@@ -3,23 +3,24 @@ import '@styles/MyAccount.scss';
 
 const MyAccount = () => {
 	return (
-		<div className="MyAccount">
-			<div className="MyAccount-container">
-				<h1 className="title">My account</h1>
-				<form action="/" className="form">
-					<div>
-						<label for="name" className="label">Name</label>
-						<p className="value">Camila Yokoo</p>
-						<label for="email" className="label">Email</label>
-						<p className="value">camilayokoo@gmail.com</p>
-						<label for="password" className="label">Password</label>
-						<p className="value">*********</p>
-					</div>
-					<input type="submit" value="Edit" className="secondary-button login-button" />
-				</form>
-			</div>
-		</div>
+<div classname="MyAccount">
+  <div classname="MyAccount-container">
+    <h1 classname="title">My account</h1>
+    <form action="/" classname="form">
+      <div>
+        <label htmlFor="name" classname="label">Name</label>
+        <p classname="value">Camila Yokoo</p>
+        <label htmlFor="email" classname="label">Email</label>
+        <p classname="value">camilayokoo@gmail.com</p>
+        <label htmlFor="password" classname="label">Password</label>
+        <p classname="value">*********</p>
+      </div>
+      <input type="submit" defaultValue="Edit" classname="secondary-button login-button" />
+    </form>
+  </div>
+</div>
+
 	);
-}
+};
 
 export default MyAccount;

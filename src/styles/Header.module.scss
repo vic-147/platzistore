@@ -9,12 +9,14 @@
   top: 0;
   background: $--white;
   width: calc(100% - 50px);
+  z-index: 1;
 }
 .menu {
   display: none;
 }
 .nav-logo {
   width: 100px;
+  margin-top: 20px;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -68,7 +70,8 @@
 }
 @media (max-width: 640px) {
   .menu {
-    display: block;
+    display: flex;
+    margin-top: 20px;
   }
   .navbar-left ul {
     display: none;

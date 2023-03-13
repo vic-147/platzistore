@@ -7,8 +7,8 @@ export default function App({ Component, pageProps }) {
   const initialState = useInitialState();
   return (
     <AppContext.Provider value={initialState}>
-      <Header />
+      <Header>{/* - aqui van los script de Google Analytics  */}</Header>
       <Component {...pageProps} />
     </AppContext.Provider>
-  )
+  );
 }
